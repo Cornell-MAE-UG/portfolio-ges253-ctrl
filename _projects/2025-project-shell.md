@@ -3,7 +3,7 @@ layout: project
 title: Project Shell
 description: Placeholder shell for a project — fill in details and set published: true when ready.
 technologies: []
-image: /assets/images/placeholder-project.jpg
+image: /assets/images/placeholder-project.svg
 published: false
 ---
 
