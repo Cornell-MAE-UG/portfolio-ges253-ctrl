@@ -12,7 +12,7 @@ title                    : Gavin Sneyd
 title_separator          : "-"
 name                     : Gavin Sneyd
 description              : Gavin Sneyd - Projects and CV 
-baseurl                  : "/portfolio-ges253-ctrl" # Set this to your repo name
+baseurl                  : "/revised-portfolio-ges253-ctrl" # Set this to your repo name
 
 # Theme and Style
 theme: jekyll-theme-minimal
