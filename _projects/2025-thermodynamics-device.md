@@ -1,54 +1,50 @@
 ---
 layout: project
-title: Thermodynamics Device
-description: Placeholder: short summary of the thermodynamics device project. Replace with a concise project overview.
-technologies: []
-image: /assets/images/placeholder-project.svg
-published: false
+title: Turbojet Engine Analysis
+description: A project analyzing the thermodynamic principles and performance of turbojet engines, focusing on energy conversion and efficiency.
+technologies: [Thermodynamics, Fluid Mechanics, MATLAB, SolidWorks]
+image: /assets/images/turbojet-engine.jpg
+published: true
 ---
 
-## Project Placeholder — Thermodynamics Device
+![Primary view](/assets/images/J85_ge_17a_turbojet_engine-scaled-1.jpg)
 
-This is a template file created from the `2025-detailed-mechanism-optimization` project so you can fill in your thermodynamics project later.
+## Project: Turbojet Engine Analysis
 
-Replace the sections below with your project content and assets. When ready, set `published: true` in the front matter to show the project on your site.
+This project focuses on understanding and modeling the operation of a turbojet engine as a thermodynamic device. The goal was to analyze the energy conversion processes involved, from air intake to exhaust, and evaluate the performance of the engine in terms of thrust and efficiency.
 
-### How to structure this page
-
-- **Title, description, technologies, and image** should all be set in the front matter above.
-- Use `##` headings for sections such as "Project Description", "Design Approach", "Results", and "Lessons Learned".
-- Add images in `assets/images/` and reference them like:
-
-```
-![Main view](/assets/images/thermodynamics-device-1.jpg)
-```
-
-### Example content to replace
+![Alternate view](/assets/images/bd7dde29-0c55-4330-a15a-865d2dda9064.png)
 
 ## Project Description
 
-Write a short paragraph describing your thermodynamics device: goal, constraints, and the main result.
+Turbojet engines are a class of air-breathing jet engines widely used in aviation. They operate by drawing in air, compressing it, mixing it with fuel, and igniting the mixture to produce high-velocity exhaust gases that generate thrust. The main challenge in turbojet design is maximizing thrust while maintaining fuel efficiency, which involves optimizing the compression ratio, turbine efficiency, and nozzle design. This project models these processes using idealized thermodynamic cycles and computational simulations.
+
+![Primary view](/assets/images/800px-Jet_engine.svg.webp)
 
 ## Approach
 
-Summarize your modelling, experiments, or fabrication steps. Add references to data, figures, and external links.
+The project began with a literature review of turbojet operation and the Brayton cycle. A 1D computational model of the engine was created using MATLAB, incorporating components such as the compressor, combustion chamber, turbine, and nozzle. Key parameters, including air mass flow rate, combustion temperature, and pressure ratios, were varied to evaluate their effect on thrust and thermal efficiency. Flow diagrams and thermodynamic state plots were generated to visualize energy conversion across the engine components. SolidWorks was used to design simplified schematics of the engine for illustration.
+
+![Alternate view](/assets/images/Turbjet_Press_temps.png)
 
 ## Results
 
-Include measured performance, relevant plots, and short conclusions.
+Simulation results show that increasing the compressor pressure ratio improves thermal efficiency but also increases turbine inlet temperature, requiring careful material considerations. The maximum calculated thrust at optimal operating conditions was consistent with theoretical predictions for a small turbojet engine. Performance plots highlight the relationship between fuel consumption, air mass flow, and engine thrust, demonstrating the trade-offs inherent in turbojet design.
 
----
+![Primary view](/assets/images/HS-graphic-1024x610.jpg)
 
-### Publish locally and push
+## Potential Modification
 
-When you've added content and images, run:
+One potential modification to improve turbojet engine performance is the addition of a **heat exchanger or intercooler** between the compressor and combustion chamber. In a standard turbojet, the air is compressed and then directly sent to the combustion chamber. However, compressing air increases its temperature, which reduces density and the overall efficiency of the subsequent combustion process. By cooling the compressed air before it enters the combustion chamber, an intercooler reduces its temperature, allowing more air mass to enter the chamber at the same pressure. This effectively increases the engine’s thrust potential without raising fuel consumption. Additionally, cooler air entering the combustion chamber reduces the maximum temperature the turbine sees, which can improve component life and allow the use of lighter or less heat-resistant materials. Overall, integrating an intercooler is a modification that enhances thermal efficiency, increases thrust, and improves the durability of the turbojet engine.
 
-```bash
-git add _projects/2025-thermodynamics-device.md assets/images/thermodynamics-device-*.jpg
-git commit -m "Add project: Thermodynamics Device (draft)"
-git push origin main
-```
+## Lessons Learned
 
-If you prefer a PR workflow, create a branch instead of committing to `main` and open a pull request on GitHub.
+Through this project, the importance of balancing compression, combustion, and turbine efficiency became clear. The project reinforced the role of thermodynamic analysis in engine design and showed how simulation tools can predict performance before physical prototyping. It also emphasized the impact of heat management and component materials on overall efficiency.
 
-Enjoy — edit this file and replace the placeholder text with your final project content.
+![Alternate view](/assets/images/Jet-engine.webp)
+
+### References
+
+- Mattingly, J. D. *Elements of Propulsion: Gas Turbines and Rockets*. AIAA, 2006.  
+- Hill, P. G., & Peterson, C. R. *Mechanics and Thermodynamics of Propulsion*. Pearson, 1992.  
+- Turns, S. R. *An Introduction to Combustion: Concepts and Applications*. McGraw-Hill, 2012.  
